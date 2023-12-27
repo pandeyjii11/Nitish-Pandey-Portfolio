@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --clrPrimary: rgb(8, 19, 31);
+    --clrSecondary: rgb(249, 249, 246);
+    --clrSecondaryLight: rgb(249, 249, 246, .7);
+    --clrAccent: rgb(221, 82, 69);
+    --clrAccentLight: rgb(221, 82, 69, .7);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../src/Assets/background.svg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--clrPrimary);
 }
