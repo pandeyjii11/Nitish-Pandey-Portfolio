@@ -11,6 +11,8 @@ const Home = () => {
 
     useEffect(() => {
         AOS.init();
+        window.addEventListener('load', AOS.refresh);
+        window.addEventListener('scroll', AOS.refresh);
     }, []);
 
     return(

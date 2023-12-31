@@ -27,7 +27,9 @@ const Project = () => {
 
     useEffect(() => {
         AOS.init();
-    }, []);
+        window.addEventListener('scroll', AOS.refresh);
+        window.addEventListener('load', AOS.refresh);
+    }, [currentTab, project]);
 
     return(
         <div className="w-[75%] md:w-[85%] mx-auto my-28 overflow-x-hidden">

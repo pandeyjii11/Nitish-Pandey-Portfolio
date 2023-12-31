@@ -23,6 +23,8 @@ const Contact = () => {
     }
 
     useEffect(() => {
+        window.addEventListener('load', AOS.refresh);
+        window.addEventListener('scroll', AOS.refresh);
         AOS.init();
     }, []);
 
