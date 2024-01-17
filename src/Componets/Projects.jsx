@@ -3,6 +3,43 @@ import { projectData } from "../Data/project-data";
 import { NavLink } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import weather from "../Assets/weatherAppThumbnail.png";
+import password from "../Assets/passwordGeneratorThumbnail.png";
+import samplePortfolio from "../Assets/samplePortfolioThumbnail.png";
+import ticTacToe from "../Assets/ticTacToeThumbnail.png";
+import imageGallery from "../Assets/imageGalleryThumbnail.png";
+import parallex from "../Assets/parallexEffectThumbnail.png";
+import blogWeb from "../Assets/blogWebsiteThumbnail.png";
+import shopApp from "../Assets/shopappThumbnail.png";
+import topCourses from "../Assets/topCoursesThumbnail.png";
+import tourism from "../Assets/tourismPlanThumbail.png";
+import testimonial from "../Assets/testimonialSliderThumbnail.png";
+import gifs from "../Assets/randomGIFsThumbnail.png";
+import reporter from "../Assets/reportersApiDocs.png";
+import chatApp from  "../Assets/chatAppThumbnail.png";
+import studyNotion from "../Assets/studyNotionThumbnail.png";
+import razorpay from "../Assets/razorpayThumbnail.png";
+import discord from "../Assets/discordThumbnail.png";
+
+const icons = {
+    "weather": weather,
+    "password": password,
+    "samplePortfolio": samplePortfolio,
+    "ticTacToe": ticTacToe,
+    "imageGallery": imageGallery,
+    "parallex": parallex,
+    "blogWeb": blogWeb,
+    "shopApp": shopApp,
+    "topCourses": topCourses,
+    "tourism": tourism,
+    "testimonial": testimonial,
+    "gifs": gifs,
+    "reporter": reporter,
+    "chatApp": chatApp,
+    "studyNotion": studyNotion,
+    "razorpay": razorpay,
+    "discord": discord,
+};
 
 const Project = () => {
 
@@ -62,7 +99,7 @@ const Project = () => {
                                     className=" flex flex-col gap-3"
                                 >
                                     <div className="relative">
-                                        <img src={`https://drive.google.com/uc?export=view&id=${project.imageUrl}`} alt="thumbnail" 
+                                        <img src={icons[project.imageUrl]} alt="thumbnail" 
                                         className="w-full h-full object-cover rounded-xl hover:opacity-60 transition-all duration-200"
                                         />
                                     </div>
