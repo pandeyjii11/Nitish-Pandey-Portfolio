@@ -21,7 +21,7 @@ const Home = () => {
                 <h1 className="text-white text-6xl flex flex-col lg:flex-row justify-center items-center gap-4 text-center">
                     Nitish Pandey <span className=" text-clrAccent">Full Stack Developer</span>
                 </h1>
-                <NavLink target="_blank" to={"https://drive.google.com/file/d/1s6Apjfm2Pnrz7eERGSTW-OsTdMGlMbaE/view?usp=drive_link"}>
+                <NavLink target="_blank" to={"https://drive.google.com/file/d/1UGY2AZ8Kl4MRIuGKzOQNxQfNnfxRoWGW/view?usp=drive_link"}>
                     <button className="px-6 py-2 rounded-lg border border-clrAccent text-white font-bold text-normal 
                     hover:bg-clrAccent transition-all duration-200">
                         Read the CV
